@@ -41,6 +41,7 @@ export default function HomePage() {
             ИИ-анализ за 3 секунды
           </div>
           <div className="ai-card">
+            <div className="ai-card-inner">
             <div className="ai-photo">
               <div className="ai-photo-placeholder">Фото насаждения</div>
             </div>
@@ -54,6 +55,7 @@ export default function HomePage() {
               Обнаружены признаки грибкового заболевания коры.
               Рекомендуется срочное обследование специалистом в течение 48 часов.
             </p>
+            </div>
           </div>
           <div className="float-badge float-badge-2">
             <span className="float-dot dot-blue" />
@@ -76,7 +78,7 @@ export default function HomePage() {
             { num: '04', title: 'Проблема решена', desc: 'Вы отслеживаете статус в реальном времени и получаете уведомление' },
           ].map(s => (
             <div key={s.num} className="step-card">
-              <div className="step-num">{s.num}</div>
+              <div className="step-num"><span className="step-num-text">{s.num}</span></div>
               <h3>{s.title}</h3>
               <p>{s.desc}</p>
             </div>
