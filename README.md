@@ -2,30 +2,32 @@
 
 Платформа мониторинга зелёных насаждений с ИИ-анализом фото (Google Gemini).
 
-## Стек
+**Стек:** NestJS · PostgreSQL · React · Vite · TypeScript
 
-- **Backend**: NestJS · TypeORM · PostgreSQL · JWT
-- **Frontend**: React · Vite · TypeScript
-- **AI**: Google Gemini 2.0 Flash
+---
 
-## Запуск
+## Быстрый запуск
 
-### 1. База данных
-
-Создай БД в PostgreSQL:
-
-```sql
-CREATE DATABASE green_district;
-```
-
-### 2. Backend
-
+**1. Создай базу данных**
 ```bash
-cd backend
-npm install
+psql -U postgres -c "CREATE DATABASE green_district;"
 ```
 
-Создай файл `backend/.env`:
+**2. Запусти backend**
+```bash
+cd backend && npm install && npm run start:dev
+```
+
+**3. Запусти frontend**
+```bash
+cd frontend && npm install && npm run dev
+```
+
+Сайт откроется на `http://localhost:5173`
+
+---
+
+## Настройка `backend/.env`
 
 ```env
 DB_HOST=localhost
@@ -39,21 +41,7 @@ GEMINI_API_KEY=твой_ключ_gemini
 PORT=3000
 ```
 
-```bash
-npm run start:dev
-```
-
-Backend запустится на `http://localhost:3000`
-
-### 3. Frontend
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-Frontend запустится на `http://localhost:5173`
+---
 
 ## Роли
 
