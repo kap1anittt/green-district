@@ -28,6 +28,7 @@ export default function ReportsPage() {
   ];
 
   return (
+    <div className="reports-bg">
     <div className="reports-page">
       <div className="page-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
         <div>
@@ -79,6 +80,7 @@ export default function ReportsPage() {
           ))}
         </div>
       )}
+    </div>
     </div>
   );
 }

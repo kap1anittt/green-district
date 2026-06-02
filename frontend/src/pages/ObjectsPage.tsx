@@ -36,6 +36,7 @@ export default function ObjectsPage() {
   const filtered = filter ? objects.filter(o => o.type === filter) : objects;
 
   return (
+    <div className="objects-bg">
     <div className="objects-page">
       <div className="objects-header">
         <div>
@@ -94,6 +95,7 @@ export default function ObjectsPage() {
           ))}
         </div>
       )}
+    </div>
     </div>
   );
 }

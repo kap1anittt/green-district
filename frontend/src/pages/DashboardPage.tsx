@@ -39,6 +39,7 @@ export default function DashboardPage() {
   const critical = stats?.bySeverity.find(s => s.severity === 'critical')?.count || '0';
 
   return (
+    <div className="dashboard-bg">
     <div className="dashboard">
       <div className="dash-header">
         <div className="dash-header-left">
@@ -120,6 +121,7 @@ export default function DashboardPage() {
           )}
         </div>
       </div>
+    </div>
     </div>
   );
 }

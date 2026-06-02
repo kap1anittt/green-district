@@ -86,19 +86,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="stats-strip">
-        {[
-          { val: '500', sfx: '+', lbl: 'Зелёных объектов' },
-          { val: '87',  sfx: '%', lbl: 'Заявок решено' },
-          { val: '3',   sfx: 'с', lbl: 'Среднее время анализа' },
-          { val: '24',  sfx: '/7', lbl: 'Мониторинг района' },
-        ].map(s => (
-          <div key={s.lbl} className="stat-item">
-            <div className="stat-val">{s.val}<span>{s.sfx}</span></div>
-            <div className="stat-lbl">{s.lbl}</div>
-          </div>
-        ))}
-      </section>
     </div>
   );
 }

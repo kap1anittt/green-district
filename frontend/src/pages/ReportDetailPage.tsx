@@ -48,6 +48,7 @@ export default function ReportDetailPage() {
   const canManage = user?.role === 'admin' || user?.role === 'inspector';
 
   return (
+    <div className="report-detail-bg">
     <div className="report-detail">
       <button className="btn btn-secondary back-btn" onClick={() => navigate(-1)}>← Назад</button>
 
@@ -128,6 +129,7 @@ export default function ReportDetailPage() {
           )}
         </div>
       </div>
+    </div>
     </div>
   );
 }
